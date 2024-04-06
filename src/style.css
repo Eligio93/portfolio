@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Teko:wght@300..700&display=swap');
+
+:root {
+    --header: #0D0D0D;
+    --header-active:#F263A6;
+    --teko-font: "Teko", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: var(--header);
+    font-family: var(--teko-font);
+    padding: 20px;
+}
+
+.header ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    list-style-type: none;
+    font-size: 2rem;
+    animation: bounce-in-right 2s ease;
+}
+@keyframes bounce-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(2000px);
+      }
+      60% {
+        opacity: 1;
+        transform: translateX(-30px);
+      }
+      80% {
+        transform: translateX(10px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header a.active{
+   border-bottom: 2px solid var(--header-active);
+   color:var(--header-active)
+
+}
