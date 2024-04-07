@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Teko:wght@300..700&display=swap');
 
 :root {
-    --header: #0D0D0D;
+    --header: #081526;
     --header-active:#F263A6;
     --teko-font: "Teko", sans-serif;
+    --hero:#1C2559;
 }
 
 * {
@@ -11,7 +12,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*header styling*/
 .header {
     background-color: var(--header);
     font-family: var(--teko-font);
@@ -53,4 +54,21 @@
    border-bottom: 2px solid var(--header-active);
    color:var(--header-active)
 
+}
+/*end header styling */
+/*hero styling*/
+.hero{
+  background-color: var(--hero);
+  color:white;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  padding:50px;
+  font-family: var(--teko-font);
+}
+.hero h1{
+  font-size: 4rem;
+}
+.hero p{
+  font-size: 3rem;
 }
