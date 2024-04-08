@@ -1,11 +1,20 @@
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-
+let greetings=['Ciao','Hello','Bonjour','Hola','Hallo','Olá','Привет','Hej']
 
 export default function Hero(){
+    const [greetingIndex, setGreetingIndex]=useState(0);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setGreetingIndex(prevIndex => (prevIndex + 1) % greetings.length);
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, []);
     return <div className="hero">
         <div className="hero-description">
-        <p>Welcome to:</p>
-        <h1>EC Web Developer</h1>
+        <p>{greetings[greetingIndex]+'!'}</p>
+        <h1>I'm <span>Eligio Cristantielli</span></h1>
         <p>Web Development made easy</p>
         </div>
         <div className="hero-buttons">
