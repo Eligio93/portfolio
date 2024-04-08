@@ -15,7 +15,7 @@ export default function Hero(){
         <div className="hero-description">
         <p>{greetings[greetingIndex]+'!'}</p>
         <h1>I'm <span>Eligio Cristantielli</span></h1>
-        <p>Web Development made easy</p>
+        <p>Welcome to my portfolio website! Here, you'll discover my latest projects, the technologies I use, and the services I offer. Don't hesitate to reach out—I'd love to hear from you. Enjoy exploring!</p>
         </div>
         <div className="hero-buttons">
         <Link to='/projects'><button>Explore Portfolio</button></Link>
