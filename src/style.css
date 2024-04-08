@@ -8,6 +8,7 @@
     --medium-blue:#254C8F;
     --pastel-green:#C3D9AD;
     --pastel-grey: #D7D7D9;
+    --dark-green:#79B461;
 }
 
 * {
@@ -63,11 +64,11 @@
 /*hero styling*/
 .hero{
   background-color: var(--dark-blue);
+  padding:100px;
   color:white;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   gap:30px;
-  padding:50px;
   font-family: var(--teko-font);
   border-bottom:2px solid var(--orange);
 }
@@ -77,6 +78,39 @@
 .hero p{
   font-size: 3rem;
 }
+.hero-buttons{
+  display:flex;
+  align-self: flex-end;
+  gap:50px;
+}
+.hero-buttons button{
+  height:150px;
+  width:150px;
+  border-radius: 100%;
+  font-family: var(--teko-font);
+  font-size: 1.5rem;
+  color:white;
+  background-color: var(--dark-blue);
+  border: 2px solid var(--orange);
+}
+.hero-buttons button:hover{
+  cursor: pointer;
+  animation:hero-btn-animation 0.1s ease-in forwards
+}
+@keyframes hero-btn-animation {
+  from{
+    transform: scale(1);
+    background-color: var(--dark-blue);
+    
+    /* transform: scale(1); */
+  }
+  to{
+    transform: scale(1.2);
+    background-color: var(--dark-green);
+    /* transform: scale(1.2); */
+  }
+}
+
 /*end hero styling*/
 /*areas of specialization*/
 .areas-specialization{
