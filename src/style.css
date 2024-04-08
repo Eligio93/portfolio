@@ -21,13 +21,14 @@
 .header {
     background-color: var(--dark-blue);
     font-family: var(--teko-font);
-    padding: 20px;
+    padding: 20px 50px;
 }
 
 .header ul {
     display: flex;
+    height:fit-content;
     justify-content: flex-end;
-    gap: 2rem;
+    gap: 3rem;
     list-style-type: none;
     font-size: 2rem;
     animation: bounce-in-right 2s ease;
@@ -53,13 +54,30 @@
 .header a {
     text-decoration: none;
     color: white;
+    position: relative;
 }
 
+
+.header a:not(.active)::after {
+  content: '';
+  position: absolute;
+  top:100%;
+  bottom:0;
+  left:0;
+  width: 0;
+  height: 3px; /* set the height of the border */
+  background-color: white; /*border bottom color*/
+  transition: width 0.5s ease; /*Aplly transition for animation*/
+} 
+
+.header a:hover::after {
+  width: 100%; /*On hover extend width to 100%*/
+ }
 .header a.active{
    border-bottom: 3px solid var(--orange);
    color:var(--orange)
-
 }
+
 /*end header styling */
 /*hero styling*/
 .hero{
@@ -95,6 +113,9 @@
   }
   
 }
+.hero p:nth-of-type(2){
+  font-size: 1.8rem;
+}
 .hero-buttons{
   display:flex;
   align-self: flex-end;
@@ -116,20 +137,17 @@
 }
 .hero-buttons button:hover{
   cursor: pointer;
-  animation:hero-btn-animation 0.1s ease-in forwards
+  animation:hero-btn-animation 0.1s ease-in-out forwards
 }
 @keyframes hero-btn-animation {
   from{
     transform: scale(1);
     background-color: var(--dark-blue);
-    
-    /* transform: scale(1); */
   }
   to{
     transform: scale(1.2);
     background-color: var(--dark-green);
     color:var(--dark-blue)
-    /* transform: scale(1.2); */
   }
 }
 
@@ -179,6 +197,7 @@
   padding:50px;
   background-color: var(--dark-blue);
   font-family: var(--teko-font);
+  border-bottom:2px solid var(--orange)
 }
 .used-technologies h2{
   font-size: 2rem;
@@ -199,6 +218,7 @@
   text-align: center;
 }
 .technology img{
- max-width:5rem;
+ max-width:80px;
+ height: auto;
 }
 
