@@ -16,24 +16,16 @@ import "./style.css"
 
 let technologies = [
   {
-    name: 'Javascript',
-    icon: javascriptIcon
+    name: 'HTML',
+    icon: htmlIcon
   },
   {
     name: 'CSS',
     icon: cssIcon
   },
   {
-    name: 'GitHub',
-    icon: gitHubIcon
-  },
-  {
-    name: 'HTML',
-    icon: htmlIcon
-  },
-  {
-    name: 'Node',
-    icon: nodeIcon
+    name: 'Javascript',
+    icon: javascriptIcon
   },
   {
     name: 'React',
@@ -44,14 +36,21 @@ let technologies = [
     icon: viteIcon
   },
   {
-    name: 'Visual Studio',
-    icon: vsIcon
-  },
-  {
     name: 'WebPack',
     icon: webpackIcon
+  },
+  {
+    name: 'Node',
+    icon: nodeIcon
+  },
+  {
+    name: 'GitHub',
+    icon: gitHubIcon
+  },
+  {
+    name: 'Visual Studio',
+    icon: vsIcon
   }
-
 ]
 
 
@@ -78,10 +77,12 @@ function App() {
           <SpecCard
             icon={frontEndIcon}
             title={"Front-End Development"}
+            description={''}
           />
           <SpecCard
             icon={mobileIcon}
             title={"Mobile Development"}
+            description={''}
           />
         </div>
       </section>
