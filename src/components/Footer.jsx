@@ -1,7 +1,7 @@
 import emailIcon from '../assets/emailIcon.svg'
 import locationIcon from '../assets/locationIcon.svg'
 import linkedinIcon from '../assets/linkedinIcon.svg'
-import githubIcon from '../assets/gitHubIcon.svg'
+import gitIconFooter from '../assets/gitIconFooter.svg'
 
 export default function Footer(){
     return <footer className="footer">
@@ -27,7 +27,7 @@ export default function Footer(){
                 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/eligio-cristantielli">Linkedin</a>
             </div>
             <div className="footer-github">
-                <img src={githubIcon} alt="" />
+                <img src={gitIconFooter} alt="github-icon" />
                 <a href="https://github.com/Eligio93" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
         </div>
