@@ -2,6 +2,7 @@
 
 :root {
     --dark-blue: #173673;
+    --footer:#081b3f;
     --light-blue:#80C7F2;
     --teko-font: "Teko", sans-serif;
     --orange:#F27244;
@@ -237,15 +238,16 @@
 .footer{
   display:flex;
   padding:50px 50px 10px 50px;
-  background-color: var(--dark-blue);
+  background-color: var(--footer);
   font-family: var(--teko-font);
-  color: var(--orange)
+  color: white;
 }
 .footer-description{
+  flex:1;
 }
 .footer-description p:nth-of-type(1){
   font-size: 2rem;
-  font-weight: bold;
+  
 }
 .footer-description p:nth-of-type(2){
   font-size: 1.5rem;
@@ -267,7 +269,10 @@
 }
 .footer-email a{
   text-decoration: none;
-  color:var(--orange)
+  color:white;
+}
+.footer-email a:hover{
+  color:var(--dark-green)
 }
 .footer-location{
   display:flex;
@@ -275,9 +280,10 @@
 }
 .footer-social{
   display:flex;
-  gap:10px;  
-  flex-direction: column;
+  gap:20px;  
   font-size: 1.8rem;
+  flex:1;
+  justify-content: flex-end;
  
 }
 .footer-social img{
@@ -292,6 +298,9 @@
 }
 .footer-linkedin a,.footer-github a{
   text-decoration: none;
-  color:var(--orange)
+  color:white;
+}
+.footer-linkedin a:hover,.footer-github a:hover{
+  color:var(--dark-green)
 }
 
