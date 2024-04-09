@@ -59,8 +59,8 @@ function App() {
     <>
       <Header />
       <Hero />
-      <section className="used-technologies">
-        <h2>Used Technologies</h2>
+      <section className="tech-stack">
+        <h2>Tech Stack</h2>
         <div className="technologies-container">
           {technologies.map((technologie) => {
             return <div className="technology" key={technologie.name}>
@@ -77,12 +77,12 @@ function App() {
           <SpecCard
             icon={frontEndIcon}
             title={"Front-End Development"}
-            description={''}
+            description={'Specializing in front-end development, I create visually appealing and interactive user interfaces for websites and web apps. With expertise in HTML, CSS, and JavaScript, I ensure seamless functionality across platforms. Let me bring your vision to life for an exceptional user experience.'}
           />
           <SpecCard
             icon={mobileIcon}
-            title={"Mobile Development"}
-            description={''}
+            title={"Responsive Development"}
+            description={'Experience personalized responsiveness tailored just for you, ensuring seamless compatibility across all screens, including mobile devices. Your content, perfectly optimized for every viewing experience, at your fingertips'}
           />
         </div>
       </section>
