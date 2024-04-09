@@ -13,6 +13,7 @@ import viteIcon from './assets/viteIcon.svg'
 import vsIcon from './assets/vsIcon.svg'
 import webpackIcon from './assets/webpackIcon.svg'
 import "./style.css"
+import Footer from "./components/Footer";
 
 let technologies = [
   {
@@ -86,6 +87,7 @@ function App() {
           />
         </div>
       </section>
+      <Footer/>
 
     </>
   )
