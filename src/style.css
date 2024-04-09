@@ -152,54 +152,15 @@
 }
 
 /*end hero styling*/
-/*areas of specialization*/
-.areas-specialization{
-  background-color: var(--dark-blue) ;
-  padding:50px;
-  font-family: var(--teko-font);
-}
-.areas-specialization h2{
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom:20px;
-  color:white;
-}
-.cards-container{
-  display:flex;
-  justify-content: center;
-  gap:50px;
- 
-}
-.cards-container img{
-  height:50px;
-}
-.spec-card{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color:var(--pastel-grey);
-  border-radius: 10px;
-  color:var(--dark-blue);
-  gap:10px;
-  padding:20px;
-  height:400px;
-  box-shadow: 0px 10px 13px -7px var(--pastel-grey), 5px 5px 15px 5px rgba(0,0,0,0);
-}
-.spec-card p:nth-of-type(1){
-  font-size: 2rem;
-}
-.spec-card p:nth-of-type(2){
-  font-size: 1.5rem;
-}
-/*end area of specialization*/
+
 /*technologies*/
-.used-technologies{
+.tech-stack{
   padding:50px;
   background-color: var(--dark-blue);
   font-family: var(--teko-font);
   border-bottom:2px solid var(--orange)
 }
-.used-technologies h2{
+.tech-stack h2{
   font-size: 2rem;
   font-weight: 500;
   margin-bottom:20px;
@@ -221,4 +182,52 @@
  max-width:80px;
  height: auto;
 }
+/*end tech stack*/
+
+
+/*areas of specialization*/
+.areas-specialization{
+  background-color: var(--dark-blue) ;
+  padding:50px;
+  font-family: var(--teko-font);
+  border-bottom: 2px solid var(--orange);
+}
+.areas-specialization h2{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom:20px;
+  color:white;
+}
+.cards-container{
+  display:flex;
+  justify-content: space-evenly;
+ 
+}
+.cards-container img{
+  height:80px;
+  stroke: var(--orange);
+  margin-bottom:10px;
+}
+.spec-card{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  color:white;
+  width:300px;
+ 
+  
+}
+
+.spec-card p:nth-of-type(1){
+  text-align: center;
+  font-size: 2rem;
+  width:100%;
+  margin-bottom:20px;
+  border-bottom: 2px solid var(--dark-green);
+}
+.spec-card p:nth-of-type(2){
+  font-size: 1.8rem;
+  width:100%;
+}
+/*end area of specialization*/
 
