@@ -19,7 +19,10 @@
 
 /*header styling*/
 .header {
-    background-color: var(--dark-blue);
+    position: fixed;
+    width:100%;
+    background: linear-gradient(to bottom,var(--medium-blue) 0%,var(--dark-blue) 100%);
+    z-index: 1;
     font-family: var(--teko-font);
     padding: 20px 50px;
 }
@@ -146,7 +149,7 @@
   }
   to{
     transform: scale(1.2);
-    background-color: var(--dark-green);
+    background: radial-gradient(ellipse at center, var(--dark-green) 0%, var(--pastel-green) 100%);
     color:var(--dark-blue)
   }
 }
@@ -230,4 +233,65 @@
   width:100%;
 }
 /*end area of specialization*/
+/*style footer*/
+.footer{
+  display:flex;
+  padding:50px 50px 10px 50px;
+  background-color: var(--dark-blue);
+  font-family: var(--teko-font);
+  color: var(--orange)
+}
+.footer-description{
+}
+.footer-description p:nth-of-type(1){
+  font-size: 2rem;
+  font-weight: bold;
+}
+.footer-description p:nth-of-type(2){
+  font-size: 1.5rem;
+}
+.footer-contacts{
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap:20px;
+  align-items: center;
+}
+.footer-contacts img{
+  height:30px;
+}
+.footer-email{
+  display:flex;
+  gap:10px;
+}
+.footer-email a{
+  text-decoration: none;
+  color:var(--orange)
+}
+.footer-location{
+  display:flex;
+  gap:10px;
+}
+.footer-social{
+  display:flex;
+  gap:10px;  
+  flex-direction: column;
+  font-size: 1.8rem;
+ 
+}
+.footer-social img{
+  height:50px;
+}
+
+.footer-linkedin,.footer-github{
+  display:flex;
+  align-items: center;
+  gap:10px;
+
+}
+.footer-linkedin a,.footer-github a{
+  text-decoration: none;
+  color:var(--orange)
+}
 
