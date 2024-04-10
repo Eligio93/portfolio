@@ -20,12 +20,14 @@
 
 /*header styling*/
 .header {
-    position: fixed;
+    position: sticky;
+    top:0;
     width:100%;
     background: linear-gradient(to bottom,var(--medium-blue) 0%,var(--dark-blue) 100%);
     z-index: 1;
     font-family: var(--teko-font);
     padding: 20px 50px;
+    overflow-x: hidden;
 }
 
 .header ul {
@@ -302,5 +304,106 @@
 }
 .footer-linkedin a:hover,.footer-github a:hover{
   color:var(--dark-green)
+}
+/*end footer*/
+/*styling project page*/
+.projects-container{
+  display:flex;
+  flex-direction: column;
+  gap:50px;
+  padding:50px 100px;
+  background-color: var(--dark-blue);
+  overflow-x: hidden;
+  font-family: var(--teko-font);
+  color:white;
+}
+.listed-project{
+  display:flex;
+  align-items: center;
+  gap:30px;
+  width:100%;
+  background-color: var(--dark-blue);
+  width:80%;
+  border-bottom:2px solid var(--orange);
+  padding-bottom:50px;
+}
+.listed-project > img{
+width:30%;
+max-width: 500px;
+height:auto;
+border-radius: 10px;
+}
+.listed-project > img:hover{
+  animation: scale-img-list-project 1s ease forwards
+}
+@keyframes scale-img-list-project {
+  0%{
+    transform: scale(1);
+    box-shadow:none;
+   
+  }
+  100%{
+    transform: scale(1.5) ;
+    
+    box-shadow: 5px 5px 15px 5px black;;
+  }
+  
+}
+.listed-project:nth-of-type(even){
+  align-self: flex-end;
+  animation: slide-in-left 0.5s ease-in 
+}
+.listed-project:nth-of-type(odd){
+  animation: slide-in-right 0.5s ease-in 
+
+}
+@keyframes slide-in-right {
+  0%{
+    transform: translateX(-2000px);
+    opacity:0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity:1;
+  }
+}
+@keyframes slide-in-left {
+  0%{
+    transform: translateX(2000px);
+    opacity:0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity:1;
+  }
+  
+}
+.project-list-title{
+  font-size: 3vw;
+}
+.project-list-description{
+  font-size: 1.8vw;
+}
+.project-list-stack{
+  display:flex;
+  height:50px;
+  gap:20px;
+  margin-top:30px;
+}
+.project-list-tech{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+  height:100%;
+}
+.project-list-tech img{
+  height:100%;
+}
+.project-list-btns{
+  display:flex;
+  gap:20px;
+  margin-top:30px;
 }
 
