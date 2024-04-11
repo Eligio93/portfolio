@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import projectsList from '../projects.json'
+import projectsList from '../../public/projects.json'
 import { v4 as uuidv4 } from 'uuid';
 import gitIcon from "../assets/gitIconFooter.svg"
 import liveIcon from "../assets/liveIcon.svg"
@@ -12,7 +12,7 @@ import Header from "./Header"
 
 export default function Projects() {
     const [projects, setProjects] = useState(projectsList)
-    window.scrollTo(0, 0);
+    window.scrollTo(0,0);
     return (
         <>
             <Header />
@@ -36,11 +36,11 @@ export default function Projects() {
                                             )}
                                         </div>
                                         <div className="project-list-btns">
-                                            <button className="project-list-repo" onClick={() => window.open(`${project.gitHub}`, '_blank')}>
+                                        <button className="project-list-repo" onClick={()=>window.open(`${project.gitHub}`,'_blank')}>
                                                 <img src={gitIcon} alt="" />
                                                 <p>See Code</p>
                                             </button>
-                                            <button className="project-list-live" onClick={() => window.open(`${project.live}`, '_blank')} >
+                                            <button className="project-list-live" onClick={()=>window.open(`${project.live}`,'_blank')} >
                                                 <img src={liveIcon} alt="" />
                                                 <p>Watch Live</p>
                                             </button>
@@ -62,11 +62,11 @@ export default function Projects() {
                                             )}
                                         </div>
                                         <div className="project-list-btns">
-                                            <button className="project-list-repo" onClick={() => window.open(`${project.gitHub}`, '_blank')}>
+                                            <button className="project-list-repo" onClick={()=>window.open(`${project.gitHub}`,'_blank')}>
                                                 <img src={gitIcon} alt="" />
                                                 <p>See Code</p>
                                             </button>
-                                            <button className="project-list-live" onClick={() => window.open(`${project.live}`, '_blank')} >
+                                            <button className="project-list-live" onClick={()=>window.open(`${project.live}`,'_blank')} >
                                                 <img src={liveIcon} alt="" />
                                                 <p>Watch Live</p>
                                             </button>
