@@ -657,26 +657,6 @@ body {
 
 /*big mobile*/
 @media screen and (max-width:500px) {
-
-  /* .header{
-   display: none;
-  }
-  .mobile-header{
-    position:relative;
-    background: linear-gradient(to bottom, var(--medium-blue) 0%, var(--dark-blue) 100%);
-    border-bottom:2px solid var(--orange);
-    padding:20px;
-    text-align: right;
-    
-  }
-  .mobile-header img{
-    height:50px;
-    border:2px solid var(--orange);
-    border-radius: 10px;
-  }
-  .mobile-header img:hover{
-   cursor: pointer;
-  } */
   .header ul {
     font-size: 7vw;
     justify-content: center;
