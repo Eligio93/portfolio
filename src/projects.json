@@ -5,7 +5,7 @@
         "tech-stack": [
             {
                 "name": "HTML",
-                "icon": "src/assets/htmlIcon.svg"
+                "icon": "./src/assets/htmlIcon.svg"
             },
             {
                 "name": "CSS",
