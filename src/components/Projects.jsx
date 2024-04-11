@@ -12,6 +12,7 @@ import Header from "./Header"
 
 export default function Projects() {
     const [projects, setProjects] = useState(projectsList)
+    window.scrollTo(0,0);
     return (
         <>
             <Header />
