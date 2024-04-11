@@ -56,7 +56,7 @@ let technologies = [
 
 
 function App() {
-  window.scrollTo(0,0)
+  window.scrollTo(0, 0)
   return (
     <>
       <Header />
@@ -88,7 +88,7 @@ function App() {
           />
         </div>
       </section>
-      <Footer/>
+      <Footer />
 
     </>
   )
