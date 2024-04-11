@@ -35,11 +35,11 @@ export default function Projects() {
                                             )}
                                         </div>
                                         <div className="project-list-btns">
-                                            <button className="project-list-repo">
+                                        <button className="project-list-repo" onClick={()=>window.open(`${project.gitHub}`,'_blank')}>
                                                 <img src={gitIcon} alt="" />
                                                 <p>See Code</p>
                                             </button>
-                                            <button className="project-list-live">
+                                            <button className="project-list-live" onClick={()=>window.open(`${project.live}`,'_blank')} >
                                                 <img src={liveIcon} alt="" />
                                                 <p>Watch Live</p>
                                             </button>
@@ -52,7 +52,7 @@ export default function Projects() {
                                         <p className='project-list-title'>{project.title}</p>
                                         <p className='project-list-description'>{project.description}</p>
                                         <div className="project-list-stack">
-                                            {project['tech-stack'].map((tech, techIndex) => {
+                                            {project['tech-stack'].map((tech) => {
                                                 return <div className="project-list-tech" key={uuidv4()} >
                                                     <img src={tech.icon} alt="tech_icon" />
                                                     <p>{tech.name}</p>
@@ -61,11 +61,11 @@ export default function Projects() {
                                             )}
                                         </div>
                                         <div className="project-list-btns">
-                                            <button className="project-list-repo">
+                                            <button className="project-list-repo" onClick={()=>window.open(`${project.gitHub}`,'_blank')}>
                                                 <img src={gitIcon} alt="" />
                                                 <p>See Code</p>
                                             </button>
-                                            <button className="project-list-live">
+                                            <button className="project-list-live" onClick={()=>window.open(`${project.live}`,'_blank')} >
                                                 <img src={liveIcon} alt="" />
                                                 <p>Watch Live</p>
                                             </button>
