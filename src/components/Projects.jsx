@@ -1,10 +1,8 @@
 import { useState } from 'react'
-import projectsList from '../projects.json'
+import projectsList from '../data/projects.json'
 import { v4 as uuidv4 } from 'uuid';
 import gitIcon from "../assets/gitIconFooter.svg"
 import liveIcon from "../assets/liveIcon.svg"
-
-
 import Footer from "./Footer"
 import Header from "./Header"
 
