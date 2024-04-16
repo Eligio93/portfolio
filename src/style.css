@@ -435,7 +435,7 @@ body {
 
 .project-list-title {
   width: fit-content;
-  color: var(--orange);
+  color:white;
   font-size: 3vw;
 
 }
