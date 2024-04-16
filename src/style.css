@@ -435,14 +435,11 @@ body {
 
 .project-list-title {
   width: fit-content;
+  color: var(--orange);
   font-size: 3vw;
 
 }
 
-.project-list-title:hover {
-  cursor: pointer;
-  color: var(--orange)
-}
 
 .project-list-description {
   font-size: 1.8vw;
