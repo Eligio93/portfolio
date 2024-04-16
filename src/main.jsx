@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import Projects from './components/Projects'
+import ProjectPage from './components/ProjectPage'
 import Contacts from './components/Contacts'
 
 const router = createBrowserRouter([
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path:'/projects',
     element:<Projects />
+  },
+  {
+    path:'/projects/:projectId',
+    element:<ProjectPage />
   },
   {
     path:'/contacts',
