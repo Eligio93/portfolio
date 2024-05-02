@@ -1,5 +1,46 @@
 [
     {
+        "title": "Server Inventory App",
+        "description": "The server-side application is developed using Node.js and Express, utilizing MongoDB as Database. This application allows users to manage inventory and stock for their store. For the front-end is been used CSS and PUG as HTML generator",
+        "tech-stack": [
+            {
+                "name": "PUG",
+                "icon": "/images/pugIcon.svg"
+            },
+            {
+                "name": "CSS",
+                "icon": "/images/cssIcon.svg"
+            },
+            {
+                "name": "Javascript",
+                "icon": "/images/javascriptIcon.svg"
+            },
+            {
+                "name": "Mongo DB",
+                "icon": "/images/mongoDbIcon.svg"
+            },
+            {
+                "name": "Node",
+                "icon": "/images/nodeIcon.svg"
+            },
+            {
+                "name":"Express",
+                "icon": "/images/expressIcon.svg"
+            }
+        ],
+        "desktop-image": "/images/inventoryAppD.png",
+        "mobile-image": "/images/inventoryAppM.png",
+        "readMe": [
+            {
+                "description": "",
+                "struggles": "",
+                "conclusion": ""
+            }
+        ],
+        "gitHub": "https://github.com/Eligio93/inventory-app",
+        "live": "https://ec-inventory-app.up.railway.app/"
+    },
+    {
         "title": "Shopping Cart",
         "description": "Smalll E-Commerce App, developed in React which allows the user to add to a shopping cart, fake items fetched through an API call. The App doesn’t collect payments",
         "tech-stack": [
