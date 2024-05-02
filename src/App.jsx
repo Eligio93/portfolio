@@ -12,6 +12,9 @@ import reactIcon from './assets/reactIcon.svg'
 import viteIcon from './assets/viteIcon.svg'
 import vsIcon from './assets/vsIcon.svg'
 import webpackIcon from './assets/webpackIcon.svg'
+import expressIcon from './assets/expressIcon.svg'
+import mongoDbIcon from './assets/mongoDbIcon.svg'
+import backEndIcon from './assets/backEndIcon.svg'
 import "./style.css"
 import Footer from "./components/Footer";
 
@@ -51,6 +54,14 @@ let technologies = [
   {
     name: 'Visual Studio',
     icon: vsIcon
+  },
+  {
+    name:'Express',
+    icon:expressIcon
+  },
+  {
+    name:'Mongo DB',
+    icon:mongoDbIcon
   }
 ]
 
@@ -85,6 +96,11 @@ function App() {
             icon={mobileIcon}
             title={"Responsive Development"}
             description={'Experience personalized responsiveness tailored just for you, ensuring seamless compatibility across all screens, including mobile devices. Your content, perfectly optimized for every viewing experience, at your fingertips'}
+          />
+          <SpecCard
+            icon={backEndIcon}
+            title={"Back-End Development"}
+            description={'Specializing in back-end development, I utilize Node.js and JavaScript, paired with MongoDB for database management. Let me bolster your project with a robust back-end system, seamlessly syncing with front-end interfaces for an enhanced user experience.'}
           />
         </div>
       </section>
