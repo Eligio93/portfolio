@@ -1,7 +1,7 @@
 [
     {
         "title": "Server Inventory App",
-        "description": "The server-side application is developed using Node.js and Express, utilizing MongoDB as Database. This application allows users to manage inventory and stock for their store. For the front-end is been used CSS and PUG as HTML generator",
+        "description": "The server-side application is developed using Node.js and Express, utilizing MongoDB as Database. This application allows users to manage inventory and stock for their store. For the front-end is been used CSS and PUG as HTML generator. The app is been deployed using Railway",
         "tech-stack": [
             {
                 "name": "PUG",
