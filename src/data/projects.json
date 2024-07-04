@@ -1,5 +1,54 @@
 [
     {
+        "title": "EC Blog",
+        "description": "EcBlog is a full-stack application that includes two FrontEnds and one Backend. The two front ends are the client side, which is the actual blog open to everyone where various articles are present, and users can leave comments after registering. The other front end is the CMS side, which is reserved for blog administration where it is possible to edit, publish, feature, and delete articles and comments.Both of the FrontEnds are developed using React + Vite, the Backend using Node.js + Express and MongoDB as database",
+        "tech-stack": [
+            {
+                "name": "HTML",
+                "icon": "/images/htmlIcon.svg"
+            },
+            {
+                "name": "CSS",
+                "icon": "/images/cssIcon.svg"
+            },
+            {
+                "name": "Javascript",
+                "icon": "/images/javascriptIcon.svg"
+            },
+            {
+                "name": "Mongo DB",
+                "icon": "/images/mongoDbIcon.svg"
+            },
+            {
+                "name": "Node",
+                "icon": "/images/nodeIcon.svg"
+            },
+            {
+                "name":"Express",
+                "icon": "/images/expressIcon.svg"
+            },
+            {
+                "name":"React",
+                "icon":"/images/reactIcon.svg"
+            },
+            {
+                "name":"Vite",
+                "icon":"/images/viteIcon.svg"
+            }
+        ],
+        "desktop-image": "/images/blogAPID.png",
+        "mobile-image": "/images/blogAPIM.png",
+        "readMe": [
+            {
+                "description": "",
+                "struggles": "",
+                "conclusion": ""
+            }
+        ],
+        "gitHub": "https://github.com/Eligio93/BlogAPI",
+        "live": "https://ec-blogapi.netlify.app/"
+    },
+    {
         "title": "Server Inventory App",
         "description": "The server-side application is developed using Node.js and Express, utilizing MongoDB as Database. This application allows users to manage inventory and stock for their store. For the front-end is been used CSS and PUG as HTML generator. The app is been deployed using Railway",
         "tech-stack": [
