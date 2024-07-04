@@ -175,7 +175,6 @@ body {
 
 .hero-buttons button:hover {
   cursor: pointer;
-  transform: scale(1.2);
   background: radial-gradient(ellipse at center, var(--dark-green) 0%, var(--pastel-green) 100%);
   color: var(--dark-blue)
 }
