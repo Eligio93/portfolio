@@ -362,6 +362,7 @@ body {
 /*end footer*/
 /*styling project-list page*/
 .projects-container {
+  width:100%;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -370,6 +371,12 @@ body {
   overflow-x: hidden;
   font-family: var(--teko-font);
   color: white;
+}
+.project-list-info{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  gap:20px;
 }
 
 .listed-project {
@@ -446,10 +453,11 @@ body {
 
 .project-list-stack {
   display: flex;
-  height: 50px;
+  flex-wrap: wrap;
   gap: 20px;
   margin-top: 30px;
 }
+
 
 .project-list-tech {
   display: flex;
@@ -461,7 +469,7 @@ body {
 }
 
 .project-list-tech img {
-  height: 100%;
+  height: 50px;
 }
 
 .project-list-btns {
