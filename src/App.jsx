@@ -9,9 +9,9 @@ import gitHubIcon from './assets/gitHubIcon.svg'
 import htmlIcon from './assets/htmlIcon.svg'
 import nodeIcon from './assets/nodeIcon.svg'
 import reactIcon from './assets/reactIcon.svg'
-import viteIcon from './assets/viteIcon.svg'
+import tailwindIcon from './assets/tailwindIcon.svg'
+import nextJsIcon from './assets/nextJsIcon.svg'
 import vsIcon from './assets/vsIcon.svg'
-import webpackIcon from './assets/webpackIcon.svg'
 import expressIcon from './assets/expressIcon.svg'
 import mongoDbIcon from './assets/mongoDbIcon.svg'
 import backEndIcon from './assets/backEndIcon.svg'
@@ -36,12 +36,12 @@ let technologies = [
     icon: reactIcon
   },
   {
-    name: 'Vite',
-    icon: viteIcon
+    name: 'Tailwind',
+    icon: tailwindIcon
   },
   {
-    name: 'WebPack',
-    icon: webpackIcon
+    name: 'Nextjs',
+    icon: nextJsIcon
   },
   {
     name: 'Node',
