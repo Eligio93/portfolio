@@ -1,5 +1,35 @@
 [
     {
+        "title": "From Puglia Travel Blog",
+        "description": "FromPuglia.com is a full-stack application developed in Nextjs. The backend is managed through the use of a CMS called Contentful and it's connected to the front-end through REST API. Application deployment is managed through Vercel",
+        "tech-stack": [
+            {
+                "name": "HTML",
+                "icon": "/images/htmlIcon.svg"
+            },
+            {
+                "name": "CSS",
+                "icon": "/images/cssIcon.svg"
+            },
+            {
+                "name": "Javascript",
+                "icon": "/images/javascriptIcon.svg"
+            },
+            {
+                "name": "React",
+                "icon": "/images/reactIcon.svg"
+            },
+            {
+                "name": "Nextjs",
+                "icon": "/images/nextJsIcon.svg"
+            }
+        ],
+        "desktop-image": "/images/fromPugliaD.png",
+        "mobile-image": "/images/fromPugliaM.png",
+        "gitHub":"https://github.com/Eligio93/puglia-escape",
+        "live":"http://frompuglia.com/"
+    },
+    {
         "title": "EC Blog",
         "description": "EcBlog is a full-stack application that includes two FrontEnds and one Backend. The two front ends are the client side, which is the actual blog open to everyone where various articles are present, and users can leave comments after registering. The other front end is the CMS side, which is reserved for blog administration where it is possible to edit, publish, feature, and delete articles and comments.Both of the FrontEnds are developed using React + Vite, the Backend using Node.js + Express and MongoDB as database",
         "tech-stack": [
@@ -24,16 +54,16 @@
                 "icon": "/images/nodeIcon.svg"
             },
             {
-                "name":"Express",
+                "name": "Express",
                 "icon": "/images/expressIcon.svg"
             },
             {
-                "name":"React",
-                "icon":"/images/reactIcon.svg"
+                "name": "React",
+                "icon": "/images/reactIcon.svg"
             },
             {
-                "name":"Vite",
-                "icon":"/images/viteIcon.svg"
+                "name": "Vite",
+                "icon": "/images/viteIcon.svg"
             }
         ],
         "desktop-image": "/images/blogAPID.png",
@@ -73,7 +103,7 @@
                 "icon": "/images/nodeIcon.svg"
             },
             {
-                "name":"Express",
+                "name": "Express",
                 "icon": "/images/expressIcon.svg"
             }
         ],
